@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- REPLACE: Page-specific meta tags -->
+    <title>{{PAGE_TITLE}}</title>
+    <meta name="description" content="{{PAGE_DESCRIPTION}}">
+    <meta name="keywords" content="{{PAGE_KEYWORDS}}">
+    <link rel="canonical" href="{{CANONICAL_URL}}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{OG_URL}}">
+    <meta property="og:title" content="{{OG_TITLE}}">
+    <meta property="og:description" content="{{OG_DESCRIPTION}}">
+    <meta property="og:image" content="{{OG_IMAGE}}">
+    
+    <!-- Common head elements -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="author" content="AltHistAI Team">
+    <meta name="robots" content="index, follow">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <!-- Header - loaded via JavaScript -->
+    <div data-include="header"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Scenario Hero -->
+        <section class="scenario-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a> → 
+                    <a href="../index.html#scenarios">Scenarios</a> → 
+                    <span>{{BREADCRUMB_TITLE}}</span>
+                </div>
+                
+                <h1 class="scenario-title">{{SCENARIO_TITLE}}</h1>
+                <p class="scenario-subtitle">{{SCENARIO_SUBTITLE}}</p>
+                
+                <div class="scenario-image-container">
+                    <img src="{{IMAGE_PATH}}" alt="{{IMAGE_ALT}}" class="scenario-image" />
+                    <div class="image-caption">{{IMAGE_CAPTION}}</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scenario Content -->
+        <section class="scenario-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="main-content-area">
+                        <div class="scenario-description">
+                            {{SCENARIO_DESCRIPTION}}
+                            
+                            <div class="what-if-box">
+                                <h3>What If?</h3>
+                                <p><strong>{{WHAT_IF_QUESTION}}</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- Historical Context Section -->
+                        <div class="historical-context">
+                            <h2>Historical Context & Significance</h2>
+                            <div class="context-placeholder">
+                                <p><em>This section will be enhanced with detailed historical context and significance narrative in future updates.</em></p>
+                            </div>
+                        </div>
+
+                        <!-- Main Narrative Section -->
+                        <div class="detailed-narrative">
+                            <h2>{{NARRATIVE_TITLE}}</h2>
+                            {{NARRATIVE_CONTENT}}
+                        </div>
+                    </div>
+
+                    <div class="sidebar">
+                        <div class="cta-box">
+                            <h3>Try This Scenario</h3>
+                            <p>{{CTA_DESCRIPTION}}</p>
+                            <a href="https://althistai.com" class="cta-button primary" target="_blank" rel="noopener">
+                                Explore Now →
+                            </a>
+                        </div>
+
+                        <div class="related-scenarios">
+                            <h3>Related Scenarios</h3>
+                            <div class="related-list">
+                                {{RELATED_SCENARIOS}}
+                            </div>
+                        </div>
+
+                        <div class="scenario-stats">
+                            <h3>Scenario Details</h3>
+                            <div class="stat-item">
+                                <span class="stat-label">Time Period:</span>
+                                <span class="stat-value">{{TIME_PERIOD}}</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Region:</span>
+                                <span class="stat-value">{{REGION}}</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Impact Level:</span>
+                                <span class="stat-value">{{IMPACT_LEVEL}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer - loaded via JavaScript -->
+    <div data-include="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="../js/includes.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Simple build script to generate scenario pages from template
+# This demonstrates the refactoring concept
+
+echo "Scenario Template System Created!"
+echo ""
+echo "Common elements have been extracted to:"
+echo "  - includes/header.html (shared navigation)"
+echo "  - includes/footer.html (shared footer)"
+echo "  - includes/head-common.html (shared meta tags and styles)"
+echo "  - includes/scenario-template.html (complete page template)"
+echo "  - js/includes.js (JavaScript to load shared components)"
+echo ""
+echo "Benefits of this refactoring:"
+echo "  ✅ DRY (Don't Repeat Yourself) principle"
+echo "  ✅ Single source of truth for navigation and footer"
+echo "  ✅ Easy to update common elements across all pages"
+echo "  ✅ Consistent styling and structure"
+echo "  ✅ Template system for creating new scenario pages"
+echo ""
+echo "To implement this system:"
+echo "  1. Update existing scenario files to use data-include attributes"
+echo "  2. Include js/includes.js in all scenario pages"
+echo "  3. Use scenario-template.html for new scenarios"
+echo ""
+echo "Example refactored page structure:"
+echo "  <div data-include='header'></div>"
+echo "  <!-- page content -->"
+echo "  <div data-include='footer'></div>"

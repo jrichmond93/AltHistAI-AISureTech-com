@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive or non-public routes (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+Sitemap: https://AltHistAI.com/sitemap.xml

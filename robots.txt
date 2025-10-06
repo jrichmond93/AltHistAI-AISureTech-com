@@ -1,0 +1,48 @@
+# AltHistAI Robots.txt - SEO Optimized
+# Website: https://althistai.aisuretech.com
+# Purpose: Marketing site for AI-powered alternate history simulations
+
+User-agent: *
+Allow: /
+
+# Allow all content - marketing site should be fully crawlable
+Allow: /scenarios/
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+# Disallow common non-content directories (if they exist)
+Disallow: /.vscode/
+Disallow: /docs/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Crawl-delay for respectful crawling (optional)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://althistai.aisuretech.com/sitemap.xml
+
+# Additional sitemaps (if created in future)
+# Sitemap: https://althistai.aisuretech.com/scenarios-sitemap.xml
+# Sitemap: https://althistai.aisuretech.com/images-sitemap.xml
+
+# Common bot-specific rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit/
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
